@@ -70,7 +70,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="13" selection-start="1340" selection-end="1377" vertical-scroll-proportion="-16.68" vertical-offset="229" max-vertical-offset="935">
+            <state line="47" column="12" selection-start="1352" selection-end="1352" vertical-scroll-proportion="-13.6" vertical-offset="306" max-vertical-offset="935">
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
       <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="20" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.9155629" vertical-offset="195" max-vertical-offset="935">
+            <state line="53" column="4" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.8029801" vertical-offset="416" max-vertical-offset="1020">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#750#758#0" expanded="true" />
@@ -535,7 +535,11 @@
       <created>1476471112915</created>
       <updated>1476471112915</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="qwery&#10;">
+      <created>1476471798562</created>
+      <updated>1476471798562</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -582,7 +586,8 @@
     <MESSAGE value="conect" />
     <MESSAGE value="1" />
     <MESSAGE value="qwery" />
-    <option name="LAST_COMMIT_MESSAGE" value="qwery" />
+    <MESSAGE value="qwery&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="qwery&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -691,14 +696,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="13" selection-start="1340" selection-end="1377" vertical-scroll-proportion="-16.68" vertical-offset="229" max-vertical-offset="935">
+        <state line="47" column="12" selection-start="1352" selection-end="1352" vertical-scroll-proportion="-13.6" vertical-offset="306" max-vertical-offset="935">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="20" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.9155629" vertical-offset="195" max-vertical-offset="935">
+        <state line="53" column="4" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.8029801" vertical-offset="416" max-vertical-offset="1020">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#750#758#0" expanded="true" />
