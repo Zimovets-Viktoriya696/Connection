@@ -79,10 +79,10 @@
       <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="4" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.8029801" vertical-offset="416" max-vertical-offset="1020">
+            <state line="49" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.77483445" vertical-offset="365" max-vertical-offset="969">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#750#758#0" expanded="true" />
+                <element signature="e#707#715#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -539,7 +539,11 @@
       <created>1476471798562</created>
       <updated>1476471798562</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="qwery&#10;">
+      <created>1476472009403</created>
+      <updated>1476472009404</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -609,7 +613,7 @@
         <state line="20" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="578">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#750#758#0" expanded="true" />
+            <element signature="e#707#715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -703,10 +707,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="4" selection-start="1596" selection-end="1596" vertical-scroll-proportion="0.8029801" vertical-offset="416" max-vertical-offset="1020">
+        <state line="49" column="0" selection-start="1431" selection-end="1431" vertical-scroll-proportion="0.77483445" vertical-offset="365" max-vertical-offset="969">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#750#758#0" expanded="true" />
+            <element signature="e#707#715#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -16,11 +16,9 @@ public class MyDatabaseDriver {
 
 
     public MyDatabaseDriver(String url, String username, String password){
-
         try {
             con = DriverManager.getConnection(url, username, password);
             // getting Statement object to execute query
-            stmt = con.createStatement();
         }
         catch (SQLException e) {
             e.printStackTrace();
@@ -30,7 +28,8 @@ public class MyDatabaseDriver {
     public List<String> getData (){
         List<String> list = new ArrayList<String>();
             try {
-            rs = stmt.executeQuery(query);
+                stmt = con.createStatement();
+                rs = stmt.executeQuery(query);
                 while (rs.next()) {
                 String id = rs.getString("Sample_TDate_1");
                 //  int name = rs.getInt("Sample_MSec_1");
@@ -48,7 +47,5 @@ public class MyDatabaseDriver {
     public void close (){
         //close connection ,stmt and resultset here
         try { con.close(); } catch(SQLException se) { /*can't do anything */ }
-        try { stmt.close(); } catch(SQLException se) { /*can't do anything */ }
-        try { rs.close(); } catch(SQLException se) { /*can't do anything */ }
         }
     }
