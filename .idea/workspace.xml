@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="50307a57-d1c1-4e36-8cc8-3aa141699c0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java" afterPath="$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Connection.iws" />
@@ -543,7 +542,11 @@
       <created>1476472009403</created>
       <updated>1476472009404</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="qwery&#10;">
+      <created>1476472340369</created>
+      <updated>1476472340369</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
