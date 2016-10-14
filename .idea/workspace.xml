@@ -79,8 +79,11 @@
       <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="16" selection-start="575" selection-end="575" vertical-scroll-proportion="0.42218542" vertical-offset="204" max-vertical-offset="833">
-              <folding />
+            <state line="44" column="20" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.9155629" vertical-offset="195" max-vertical-offset="935">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#750#758#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -528,7 +531,11 @@
       <created>1476468947647</created>
       <updated>1476468947647</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="qwery">
+      <created>1476471112915</created>
+      <updated>1476471112915</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -574,7 +581,8 @@
     </option>
     <MESSAGE value="conect" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="qwery" />
+    <option name="LAST_COMMIT_MESSAGE" value="qwery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -594,7 +602,10 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="578">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#750#758#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -687,8 +698,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="16" selection-start="575" selection-end="575" vertical-scroll-proportion="0.42218542" vertical-offset="204" max-vertical-offset="833">
-          <folding />
+        <state line="44" column="20" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.9155629" vertical-offset="195" max-vertical-offset="935">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#750#758#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
