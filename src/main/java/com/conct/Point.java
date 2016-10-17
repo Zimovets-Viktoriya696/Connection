@@ -17,6 +17,8 @@ public class Point {
         _value = value;
     }
 
+    public Point(){}
+
     @Override
     public String toString()
     {
