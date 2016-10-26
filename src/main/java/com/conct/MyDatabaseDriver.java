@@ -14,7 +14,7 @@ public class MyDatabaseDriver {
     private  Connection con;
     private  Statement stmt;
     private  ResultSet rs;
-    String query = "select Sample_TDate_1  from akhz1_data_50";
+    String query = "SELECT Sample_TDate_%d, Sample_MSec_%d, Sample_Value_%d FROM %s_%d WHERE Signal_Index=1";
 
 
     public MyDatabaseDriver(String url, String username, String password){
@@ -24,8 +24,8 @@ public class MyDatabaseDriver {
         }
         catch (SQLException e) {
             e.printStackTrace();
-        }
     }
+}
 
     public Map<Long, Double> getData (){
         Map<Long, Double> map = new HashMap<Long, Double>();
