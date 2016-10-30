@@ -10,6 +10,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
+
+
 /**
  * Created by Виктория on 26.09.16.
  */
@@ -24,7 +28,16 @@ public class Main {
     public static void main(String[] args) {
 
         MyDatabaseDriver myDatabaseDriver = new MyDatabaseDriver(URL, USERNAME, PASSWORD);
-        myDatabaseDriver.getData();
+         Map<Long, Double> map = myDatabaseDriver.GetAkhz1();
+
+
+
+        for(Map.Entry<Long, Double> pair : map.entrySet())
+        {
+            Long key = pair.getKey();
+            System.out.println(key);
+        }
+        // myDatabaseDriver.getData();
         myDatabaseDriver.close();
     }
 
