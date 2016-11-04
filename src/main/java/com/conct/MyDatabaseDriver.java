@@ -1,15 +1,12 @@
 package com.conct;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Виктория on 29.09.16.
  */
-public class MyDatabaseDriver {
+public class MyDatabaseDriver  {
 
     private  Connection con;
     private  Statement stmt;
@@ -51,7 +48,7 @@ public class MyDatabaseDriver {
         final int lastTablePostfix = 61;
 
      //   ArrayList<Point> akhz1 = new ArrayList<Point>();
-         Map<Long, Double> akhz1 = new HashMap<Long, Double>();
+         Map<Long, Double> akhz1 = new LinkedHashMap <Long,Double>();
 
         FillTable(akhz1, "akhz1_data", firstTablePostfix, lastTablePostfix);
 
@@ -84,36 +81,52 @@ public class MyDatabaseDriver {
     }
 
 
+  /*  public  void compare(LinkedHashMap<Long,Double> map) {
+        final Iterator<Map.Entry<Long, Double>> iterator = map.entrySet().iterator();
+        Map.Entry<Long,Double> prev = null;
+        while (iterator.hasNext()) {
+            if (prev == null) {
+                prev = iterator.next();
+            } else {
+                final Map.Entry<Long, Double> next = iterator.next();
+                prev.equals(next);
+                prev = next;
+            }
+        }
 
-    public ArrayList<Long> GetDown(Map<Long,Double> map)
+    }*/
+    public Map<Long, Double> compared(Map<Long,Double> map) {
+
+        Map<Long, Double> SortingMap = new TreeMap<Long, Double>(map);
+        System.out.println("After Sorting:");
+        Set set2 = map.entrySet();
+        Iterator iterator2 = set2.iterator();
+        while(iterator2.hasNext()) {
+            Map.Entry me2 = (Map.Entry)iterator2.next();
+            System.out.print(me2.getKey() + ": ");
+            System.out.println(me2.getValue());
+
+
+        }
+        return SortingMap;
+    }
+
+
+
+
+
+
+
+    public void GetDown(Map<Long,Double> map)
     {
         int count=1;
-        ArrayList<Point> akhz1 = new ArrayList<Point>();
+        ArrayList<Long> akhz1 = new ArrayList<Long>();
         //  FillTable(akhz1, "akhz1_data", 50, 61);
 
         for(Map.Entry<Long, Double> pair : map.entrySet())
         {
-            double value = pair.getValue();
-            System.out.println();
-        }
 
-        ArrayList<Long> down = new ArrayList<Long>();
-
-        for (int i = 0; i < akhz1.size()-2; i++) {
-            double temp=akhz1.get(i).getValue();
-            double  delta_old=  akhz1.get(i+count).getValue()-akhz1.get(i).getValue();
-            double delta_new = akhz1.get(i+count+count).getValue()-akhz1.get(i+count).getValue();
-            if(
-                    ((temp>50.96 && (delta_new < 0 && delta_old<0))))
-
-                down.add(akhz1.get(i).getTime());
-
-            else if ((temp<-522.8 &&(delta_old <0  )))
-
-                down.add(akhz1.get(i).getTime());}
-
-
-        return  down;
+    }
     }
 
 
@@ -124,3 +137,23 @@ public class MyDatabaseDriver {
         try { con.close(); } catch(SQLException se) { /*can't do anything */ }
         }
     }
+
+
+class SortedByPrice {
+
+    public Map<Long, Double> compared(LinkedHashMap<Long,Double> map) {
+
+        Map<Long, Double> SortingMap = new TreeMap<Long, Double>(map);
+        System.out.println("After Sorting:");
+        Set set2 = map.entrySet();
+        Iterator iterator2 = set2.iterator();
+        while(iterator2.hasNext()) {
+            Map.Entry me2 = (Map.Entry)iterator2.next();
+            System.out.print(me2.getKey() + ": ");
+            System.out.println(me2.getValue());
+
+
+    }
+        return SortingMap;
+}
+}
