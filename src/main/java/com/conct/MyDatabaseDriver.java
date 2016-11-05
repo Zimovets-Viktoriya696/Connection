@@ -2,11 +2,12 @@ package com.conct;
 
 import java.sql.*;
 import java.util.*;
+import java.util.Date;
 
 /**
  * Created by Виктория on 29.09.16.
  */
-public class MyDatabaseDriver  {
+ class MyDatabaseDriver {
 
     private  Connection con;
     private  Statement stmt;
@@ -47,9 +48,7 @@ public class MyDatabaseDriver  {
         final int firstTablePostfix = 52;
         final int lastTablePostfix = 61;
 
-     //   ArrayList<Point> akhz1 = new ArrayList<Point>();
-         Map<Long, Double> akhz1 = new LinkedHashMap <Long,Double>();
-
+        Map<Long, Double> akhz1 = new LinkedHashMap <Long,Double>();
         FillTable(akhz1, "akhz1_data", firstTablePostfix, lastTablePostfix);
 
        // akhz1.sort(new TimeComparator());
@@ -95,29 +94,21 @@ public class MyDatabaseDriver  {
         }
 
     }*/
-    public Map<Long, Double> compared(Map<Long,Double> map) {
+  /*  public Map<Long, Double> compared(Map<Long,Double> map) {
 
         Map<Long, Double> SortingMap = new TreeMap<Long, Double>(map);
-        System.out.println("After Sorting:");
-        Set set2 = map.entrySet();
-        Iterator iterator2 = set2.iterator();
+            Set set2 = map.entrySet();
+            Iterator iterator2 = set2.iterator();
         while(iterator2.hasNext()) {
             Map.Entry me2 = (Map.Entry)iterator2.next();
             System.out.print(me2.getKey() + ": ");
             System.out.println(me2.getValue());
-
-
         }
         return SortingMap;
     }
+*/
 
-
-
-
-
-
-
-    public void GetDown(Map<Long,Double> map)
+    /*public void GetDown(Map<Long,Double> map)
     {
         int count=1;
         ArrayList<Long> akhz1 = new ArrayList<Long>();
@@ -127,33 +118,49 @@ public class MyDatabaseDriver  {
         {
 
     }
+    }*/
+
+    public Map<Long, Double> compared(Map<Long,Double> map) {
+
+        TreeMap<Long, Double> sorted = new TreeMap<>(map);
+            Set<Map.Entry<Long, Double>> mappings = sorted.entrySet();
+                System.out.println("HashMap after sorting by keys in ascending order ");
+        for(Map.Entry<Long, Double> mapping : mappings){
+            System.out.println(mapping.getKey() + " ==> " + mapping.getValue()); }
+        return sorted;
+
     }
-
-
-
 
     public void close (){
         //close connection ,stmt and resultset here
         try { con.close(); } catch(SQLException se) { /*can't do anything */ }
         }
     }
+/*
+abstract class sort implements Comparable {
 
+    public Map<Long, Double> compared(Map<Long,Double> map) {
 
-class SortedByPrice {
+        Map<Long, Double> treeMap = new TreeMap<Long, Double>(
+                new Comparator<Double>() {
 
-    public Map<Long, Double> compared(LinkedHashMap<Long,Double> map) {
+                    @Override
+                    public int compare(Integer o1, Integer o2) {
+                        return o2.compareTo(o1);
+                    }
 
-        Map<Long, Double> SortingMap = new TreeMap<Long, Double>(map);
-        System.out.println("After Sorting:");
-        Set set2 = map.entrySet();
-        Iterator iterator2 = set2.iterator();
-        while(iterator2.hasNext()) {
-            Map.Entry me2 = (Map.Entry)iterator2.next();
-            System.out.print(me2.getKey() + ": ");
-            System.out.println(me2.getValue());
+                });
 
+	    */
+/* For Java 8, try this lambda
+		Map<Integer, String> treeMap = new TreeMap<>(
+		                (Comparator<Integer>) (o1, o2) -> o2.compareTo(o1)
+		        );
+		*//*
 
+        treeMap.putAll(unsortMap);
     }
-        return SortingMap;
 }
-}
+*/
+
+
