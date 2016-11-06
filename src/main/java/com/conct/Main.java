@@ -25,7 +25,7 @@ public class Main {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         MyDatabaseDriver myDatabaseDriver = new MyDatabaseDriver(URL, USERNAME, PASSWORD);
          Map<Long, Double> map = myDatabaseDriver.GetAkhz1();
@@ -37,8 +37,8 @@ public class Main {
             Long key = pair.getKey();
             System.out.println(key);
         }
-        // myDatabaseDriver.getData();
-        myDatabaseDriver.close();*/
+        // myDatabaseDriver.getData();*/
+        myDatabaseDriver.close();
     }
 
 }

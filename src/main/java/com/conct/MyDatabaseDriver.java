@@ -72,6 +72,8 @@ import java.util.Date;
                     map.put(time, value);
                     }
                 }
+            catch(NullPointerException nullEx) { nullEx.printStackTrace(); }
+
             catch (SQLException sqlEx){
         sqlEx.printStackTrace();
         }

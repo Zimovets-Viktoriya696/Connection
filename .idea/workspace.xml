@@ -59,6 +59,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java" line="65" class="com.conct.MyDatabaseDriver" package="com.conct">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -68,10 +85,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="61" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="884">
+            <state line="40" column="30" selection-start="1001" selection-end="1006" vertical-scroll-proportion="0.7287234" vertical-offset="406" max-vertical-offset="884">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="0" selection-start="2037" selection-end="2037" vertical-scroll-proportion="2.9504132" vertical-offset="0" max-vertical-offset="1734">
+            <state line="95" column="78" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0" vertical-offset="1405" max-vertical-offset="1768">
               <folding>
                 <element signature="e#1662#1675#0" expanded="true" />
               </folding>
@@ -93,7 +110,7 @@
       <file leaf-file-name="LiftUp.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/LiftUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="255">
+            <state line="5" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -102,7 +119,7 @@
       <file leaf-file-name="LiftDown.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/LiftDown.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="238">
+            <state line="5" column="13" selection-start="77" selection-end="77" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
@@ -111,7 +128,7 @@
       <file leaf-file-name="Flow.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Flow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="527">
+            <state line="11" column="11" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
               <folding />
             </state>
           </provider>
@@ -120,7 +137,7 @@
       <file leaf-file-name="Point.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="714">
+            <state line="20" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="714">
               <folding />
             </state>
           </provider>
@@ -142,8 +159,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/conct/NewClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/conct/Point.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/conct/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/conct/Main.java" />
       </list>
     </option>
   </component>
@@ -407,7 +424,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="conect" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -643,12 +666,16 @@
       <created>1478379079006</created>
       <updated>1478379079006</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="wrong&#10;up&#10;sorting&#10;">
+      <created>1478460251815</created>
+      <updated>1478460251815</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="0" width="1364" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -656,7 +683,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39899832" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -667,7 +694,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25191423" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32888147" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -988,16 +1015,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.31/mysql-connector-java-5.1.31.jar!/com/mysql/jdbc/SQLError.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="0" selection-start="10411" selection-end="10411" vertical-scroll-proportion="4.7791796" vertical-offset="678" max-vertical-offset="2295">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/LiftUp.java">
@@ -1021,27 +1048,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="61" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="884">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.31/mysql-connector-java-5.1.31.jar!/com/mysql/jdbc/SQLError.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="10411" selection-end="10411" vertical-scroll-proportion="4.7791796" vertical-offset="678" max-vertical-offset="2295">
+        <state line="20" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="0" selection-start="2037" selection-end="2037" vertical-scroll-proportion="2.9504132" vertical-offset="0" max-vertical-offset="1734">
+        <state line="95" column="78" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0" vertical-offset="1405" max-vertical-offset="1768">
           <folding>
             <element signature="e#1662#1675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="30" selection-start="1001" selection-end="1006" vertical-scroll-proportion="0.7287234" vertical-offset="406" max-vertical-offset="884">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
