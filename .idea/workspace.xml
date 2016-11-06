@@ -60,7 +60,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java" line="65" class="com.conct.MyDatabaseDriver" package="com.conct">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java" line="66" class="com.conct.MyDatabaseDriver" package="com.conct">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -85,10 +85,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="30" selection-start="1001" selection-end="1006" vertical-scroll-proportion="0.7287234" vertical-offset="406" max-vertical-offset="884">
+            <state line="40" column="8" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="884">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MyDatabaseDriver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="78" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0" vertical-offset="1405" max-vertical-offset="1768">
+            <state line="66" column="0" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-0.5096419" vertical-offset="1273" max-vertical-offset="1887">
               <folding>
                 <element signature="e#1662#1675#0" expanded="true" />
               </folding>
@@ -670,7 +670,15 @@
       <created>1478460251815</created>
       <updated>1478460251815</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="wrong&#10;up&#10;sorting&#10;">
+      <created>1478461873204</created>
+      <updated>1478461873215</updated>
+    </task>
+    <task id="LOCAL-00020" summary="wrong&#10;up&#10;sorting&#10;">
+      <created>1478464184446</created>
+      <updated>1478464184446</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1055,20 +1063,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="78" selection-start="3234" selection-end="3234" vertical-scroll-proportion="0.0" vertical-offset="1405" max-vertical-offset="1768">
-          <folding>
-            <element signature="e#1662#1675#0" expanded="true" />
-          </folding>
+        <state line="3325" column="0" selection-start="152088" selection-end="152088" vertical-scroll-proportion="0.33333334" vertical-offset="55782" max-vertical-offset="85935">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="30" selection-start="1001" selection-end="1006" vertical-scroll-proportion="0.7287234" vertical-offset="406" max-vertical-offset="884">
+        <state line="40" column="8" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0" vertical-offset="406" max-vertical-offset="884">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/conct/MyDatabaseDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="2049" selection-end="2049" vertical-scroll-proportion="-0.5096419" vertical-offset="1273" max-vertical-offset="1887">
+          <folding>
+            <element signature="e#1662#1675#0" expanded="true" />
           </folding>
         </state>
       </provider>

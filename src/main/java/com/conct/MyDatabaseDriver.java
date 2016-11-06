@@ -79,7 +79,12 @@ import java.util.Date;
 
             catch (SQLException sqlEx){
         sqlEx.printStackTrace();}
-
+            finally
+            {
+                try { con.close();  } catch(SQLException se) { }
+                try { stmt.close(); } catch(SQLException se) { }
+                try { rs.close();   } catch(SQLException se) { }
+            }
     }
 
     public Map<Long, Double> compared(Map<Long,Double> map) {

@@ -38,7 +38,7 @@ public class Main {
             System.out.println(key);
         }
         // myDatabaseDriver.getData();*/
-        myDatabaseDriver.close();
+      //  myDatabaseDriver.close();
     }
 
 }
