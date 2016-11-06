@@ -58,11 +58,12 @@ import java.util.Date;
     }
 
 
-    public Map<Long, Double> getData (String query, Map<Long, Double> map){
+    public void getData (String query, Map<Long, Double> map){
             try {
                 stmt = con.createStatement();
                 rs = stmt.executeQuery(query);
                 while (rs.next()) {
+                    try{
                     long dateInMs = rs.getDate(DATE_COLUMN).getTime();
                     long timeInMs = rs.getTime(DATE_COLUMN).getTime();
                     long ms = rs.getInt(MSEC_COLUMN);
@@ -71,13 +72,14 @@ import java.util.Date;
                     double value = rs.getDouble(VALUE_COLUMN);
                     map.put(time, value);
                     }
+                    catch (NullPointerException exs){exs.printStackTrace();}
+                    }
                 }
-            catch(NullPointerException nullEx) { nullEx.printStackTrace(); }
+
 
             catch (SQLException sqlEx){
-        sqlEx.printStackTrace();
-        }
-        return map;
+        sqlEx.printStackTrace();}
+
     }
 
     public Map<Long, Double> compared(Map<Long,Double> map) {
