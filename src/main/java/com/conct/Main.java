@@ -28,19 +28,17 @@ public class Main {
     public static void main(String[] args)  {
 
         MyDatabaseDriver myDatabaseDriver = new MyDatabaseDriver(URL, USERNAME, PASSWORD);
-         Map<Long, Double> map = myDatabaseDriver.GetAkhz1();
+         Map<Long, Float> map = myDatabaseDriver.GetAkhz1();
        //myDatabaseDriver.compared(map);
 
 
-     /*   for(Map.Entry<Long, Double> pair : map.entrySet())
-        {
-            Long key = pair.getKey();
-            System.out.println(key);
-        }
+
+
+    }
         // myDatabaseDriver.getData();*/
       //  myDatabaseDriver.close();
     }
 
-}
+
 
 

@@ -30,7 +30,7 @@ import java.util.Date;
 
 
 
-    private void FillTable(Map<Long, Double> toList, String tableNamePrefix, int firstTablePostfix, int lastTablePostfix)
+    private void FillTable(Map<Long, Float> toList, String tableNamePrefix, int firstTablePostfix, int lastTablePostfix)
     {
         for(int currentTablePostfix = firstTablePostfix; currentTablePostfix <= lastTablePostfix; currentTablePostfix++)
         {
@@ -44,41 +44,55 @@ import java.util.Date;
         }
     }
 
-    public  Map<Long, Double> GetAkhz1()
+    public  Map<Long, Float> GetAkhz1()
     {
         final int firstTablePostfix = 52;
         final int lastTablePostfix = 61;
 
-        Map<Long, Double> akhz1 = new HashMap <Long,Double>();
+        Map<Long, Float> akhz1 = new HashMap <Long,Float>();
         FillTable( akhz1, "akhz1_data", firstTablePostfix, lastTablePostfix);
 
-        compared(akhz1);
 
-        return akhz1;
+        Map<Long, Float> akhz2 =  longIntegerMapSorter(akhz1);
+        for(Map.Entry<Long, Float> pair : akhz2.entrySet())
+        {
+            System.out.println(pair.getKey() + " ==> " + pair.getValue()); }
+        return akhz2;
     }
 
 
-    public void getData (String query, Map<Long, Double> map){
-            try {
-                stmt = con.createStatement();
-                rs = stmt.executeQuery(query);
-                while (rs.next()) {
-                    try{
-                    long dateInMs = rs.getDate(DATE_COLUMN).getTime();
-                    long timeInMs = rs.getTime(DATE_COLUMN).getTime();
-                    long ms = rs.getInt(MSEC_COLUMN);
+    public static Map<Long, Float> longIntegerMapSorter(Map<Long, Float> inputMap){
+        Comparator<Long> longComparator = new LongComparator();
+        Map<Long, Float> sortedMap = new TreeMap<>(longComparator);
+        sortedMap.putAll(inputMap);
+        return sortedMap;
+    }
 
-                    long time = dateInMs + timeInMs + ms;
-                    double value = rs.getDouble(VALUE_COLUMN);
-                    map.put(time, value);
-                    }
-                    catch (NullPointerException exs){exs.printStackTrace();}
-                    }
-                }
+    public void getData (String query, Map<Long, Float> map)
+    {
+         try
+         {
+              stmt = con.createStatement();
+              rs = stmt.executeQuery(query);
+
+              while (rs.next())
+              {
+                   try
+                   {
+                        long dateInMs = rs.getDate(DATE_COLUMN).getTime();
+                        long timeInMs = rs.getTime(DATE_COLUMN).getTime();
+                        long ms = rs.getInt(MSEC_COLUMN);
+
+                        long time = dateInMs + timeInMs + ms;
+                        float value = rs.getFloat(VALUE_COLUMN);
+                        map.put(time, value);
+                   }
+                   catch (NullPointerException exs){exs.printStackTrace();}
+                   }
+              }
 
 
-            catch (SQLException sqlEx){
-        sqlEx.printStackTrace();}
+            catch (SQLException sqlEx){ sqlEx.printStackTrace();}
             finally
             {
                 try { con.close();  } catch(SQLException se) { }
@@ -104,4 +118,16 @@ import java.util.Date;
         }
     }
 
+ class LongComparator implements Comparator<Long> {
 
+    @Override
+    public int compare(Long o1, Long o2) {
+        if (o1 > o2){
+            return 1;
+        }
+        if (o2 > o1){
+            return  -1;
+        }
+        return 0;
+    }
+}
